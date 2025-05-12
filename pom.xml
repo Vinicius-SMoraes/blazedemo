@@ -80,7 +80,6 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
-
                     <properties>
                         <configurationParameters>junit.jupiter.extensions.autodetection.enabled=true</configurationParameters>
                     </properties>
