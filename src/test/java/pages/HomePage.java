@@ -19,8 +19,23 @@ public class HomePage extends CommonPage{
         return By.cssSelector("option[value=\"" + local + "\"]"); // essas \ seguidas de " são para excluir a " que está na frente da \ 
     }
 
-    @FindBy(css = "input[value]")
+    @FindBy(css = ".btn-primary")
     WebElement btnFindFlights;
 
+
     // Ações com os elementos mapeados 
+    // Cada ação é um método diferente 
+    public void selecionarOrigemDestino(String byOrigem, String byDestino){
+        driver.findElement(byLocal(byOrigem)).click();
+        driver.findElement(byLocal(byDestino)).click();
+    }
+
+    public void clicarBotaoFindFlights(){
+        btnFindFlights.click();
+    }
+
+    public void acessarHomePage(){
+        driver.get("https://blazedemo.com/");
+    }
+
 }
