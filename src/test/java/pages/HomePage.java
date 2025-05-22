@@ -1,5 +1,7 @@
 package pages;
 
+import javax.print.DocFlavor.STRING;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,8 +36,9 @@ public class HomePage extends CommonPage{
         btnFindFlights.click();
     }
 
-    public void acessarHomePage(){
-        driver.get("https://blazedemo.com/");
+    public void acessarHomePage(String url){
+        driver.get(url);
     }
 
+   
 }

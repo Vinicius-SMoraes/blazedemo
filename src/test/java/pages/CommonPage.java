@@ -10,4 +10,8 @@ public class CommonPage {
         this.driver = driver;
     } 
 
+     public String lerNomeDaGuia(){
+        return driver.getTitle();
+    }
+
 }

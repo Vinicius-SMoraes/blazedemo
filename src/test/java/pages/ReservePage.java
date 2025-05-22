@@ -20,4 +20,6 @@ public class ReservePage extends HomePage {
     public String lerCabecalhoVoos(){
         return flightsHeader.getText();
     }
+
+
 }
